@@ -63,7 +63,6 @@ img {
 /*main styles*/
 
 .main {
-    padding: 20px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,7 +75,6 @@ img {
 }
 
 .main h2 {
-    font-size: 20px;
     margin-bottom: 10px;
 }
 
@@ -106,7 +104,7 @@ img {
 }
 
 .main-section > h2 {
-    font-size: 64px;
+    font-size: clamp(32px, 10vw, 64px);
 }
 
 .main-section > p {
@@ -115,15 +113,15 @@ img {
 }
 
 .average-image {
-    width: 40vw;
+    width: clamp(100px, 80vw, 800px);
 }
 
 /*services styles*/
-/* Basic styles */
 .services {
     text-align: center;
     margin: 2rem auto;
     font-size: 50px;
+    max-width: 100vw;
 }
 
 .services > h2 {
@@ -138,8 +136,9 @@ img {
 }
 
 .services > div > div {
-    font-size: 3.8rem;
-    margin: 100px;
+    font-size: clamp(1.6rem, 8vw, 3.8rem);
+    margin-left: clamp(0px, 5vw, 100px);
+    padding-right: 100px;
 }
 
 .services > a {
@@ -148,12 +147,47 @@ img {
 
 /* Service Icons */
 .small-image {
-    margin: 0.5rem;
-    width: 500px; /* adjust as needed */
+    width: clamp(250px, 10vw, 500px); /* adjust as needed */
 }
 
-/* Responsive adjustments (optional) */
-@media (max-width: 768px) {
+/*contact styles*/
+section.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 1rem; /* gentle rounded corners */
+}
+
+.contact > h2, h4 {
+    text-transform: uppercase; /* all caps */
+    margin-bottom: 0.5rem;
+}
+
+.contact > h2 {
+    color: #333; /* dark text */
+    font-size: clamp(1.8rem, 8vw, 3.8rem);
+}
+
+.contact > h4 {
+    font-size: clamp(1.8rem, 10vw, 4.8rem);
+    color: #666; /* lighter text */
+}
+
+/* Icons (optional) */
+.contact > .contact-icon {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.contact > .contact-phone:before {
+    content: ""; /* phone icon */
+}
+
+.contact > .contact-email:before {
+    content: "✉️"; /* email icon */
 }
 
 /*footer styles*/
