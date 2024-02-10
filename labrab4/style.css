@@ -1,0 +1,185 @@
+/*general*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #666;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*header styles*/
+
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.header a {
+    color: #333;
+}
+
+/*main styles*/
+
+.main {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 76vh;
+}
+
+.main section {
+    margin-bottom: 20px;
+}
+
+.main h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.main p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.main a {
+    font-size: 18px;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    background-color: #fff;
+}
+
+.main a:hover {
+    background-color: #ddd;
+}
+
+.main-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 800px;
+    text-align: center;
+}
+
+.main-section > h2 {
+    font-size: 64px;
+}
+
+.main-section > p {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.average-image {
+    width: 40vw;
+}
+
+/*services styles*/
+/* Basic styles */
+.services {
+    text-align: center;
+    margin: 2rem auto;
+    font-size: 50px;
+}
+
+.services > h2 {
+    font-size: 3.8rem;
+    margin-bottom: 1rem;
+}
+
+.services > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services > div > div {
+    font-size: 3.8rem;
+    margin: 100px;
+}
+
+.services > a {
+    width: 10vw;
+}
+
+/* Service Icons */
+.small-image {
+    margin: 0.5rem;
+    width: 500px; /* adjust as needed */
+}
+
+/* Responsive adjustments (optional) */
+@media (max-width: 768px) {
+}
+
+/*footer styles*/
+
+.footer {
+    background-color: #ddd;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer a {
+    color: #333;
+}
