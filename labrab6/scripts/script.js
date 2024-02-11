@@ -18,6 +18,8 @@ window.addEventListener('load', function() {
     if (mainSection) { mainSection.style.display = 'block'; }
     if (servicesSection) { servicesSection.style.display = 'block'; }
     if (contactSection) { contactSection.style.display = 'block'; }
+    console.log("Дата: ", new Date().toDateString());
+    console.log("Время: ", new Date().toTimeString());
 });
 
 function getUserInfo() {
