@@ -9,5 +9,12 @@ import ShoppingList from '@/components/ShoppingList.vue';
 </template>
 
 <style scoped>
-
+#app {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 </style>
