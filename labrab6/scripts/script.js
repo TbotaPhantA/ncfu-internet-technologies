@@ -37,3 +37,15 @@ usernameElement.textContent = userInfo.name;
 const photoElement = document.getElementById("user-photo");
 photoElement.src = userInfo.photoUrl;
 
+// footer change
+const footer = document.querySelector(".footer");
+
+window.addEventListener("resize", () => {
+    const width = window.innerWidth;
+
+    if (width < 768) {
+        footer.classList.add("footer-mobile");
+    } else {
+        footer.classList.remove("footer-mobile");
+    }
+});
