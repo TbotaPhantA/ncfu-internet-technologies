@@ -26,6 +26,20 @@ img {
     height: auto;
 }
 
+#loading-indicator-wrapper {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loading-indicator {
+    width: 20vw;
+    font-size: 82px;
+    text-align: center;
+    display: flex;
+}
+
 /*header styles*/
 
 .header {
