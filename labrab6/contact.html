@@ -8,16 +8,30 @@
     </head>
     <body>
         <header class="header">
-            <h1>Строительная компания "Дом"</h1>
-            <p>Сделаем ваш дом вашей мечтой!</p>
-            <ul>
-                <li><a href="main.html">Главная</a></li>
-                <li><a href="services.html">Услуги</a></li>
-                <li><a href="contact.html">Контакты</a></li>
-            </ul>
+            <div>
+                <h1>Строительная компания "Дом"</h1>
+                <p>Сделаем ваш дом вашей мечтой!</p>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="main.html">Главная</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div id="user-info">
+                <div id="username"></div>
+                <img src="" alt="" id="user-photo">
+            </div>
         </header>
-        <main class="main">
-            <section class="contact">
+        <div id="loading-indicator-wrapper">
+            <img
+                    id="loading-indicator"
+                    src="https://media2.giphy.com/media/3oEjI6SIIHBdRxXI40/200w.gif?cid=6c09b9523vd91redydus8agygabu8mo46s1hgrosr5wb12l3&ep=v1_gifs_search&rid=200w.gif&ct=g"
+                    alt="Loading...">
+        </div>
+        <main class="main" >
+            <section id="contact" class="contact">
                 <h2>Заказать услугу</h2>
                 <h4>Телефон: 9(999)9999999</h4>
                 <h4>Email: email@email.com</h4>
@@ -31,4 +45,5 @@
             </ul>
         </footer>
     </body>
+    <script src="scripts/script.js"></script>
 </html>

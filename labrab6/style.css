@@ -47,6 +47,19 @@ img {
     border-bottom: 1px solid #ddd;
     padding: 20px 0;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#user-photo {
+    width: 5vw;
+}
+
+#user-info {
+    display: flex;
+    align-items: center;
+    margin-left: 7vw;
 }
 
 .header h1 {
@@ -60,6 +73,7 @@ img {
 }
 
 .header ul {
+    font-size: clamp(20px, 1.5vw, 24px);
     list-style: none;
     margin: 0;
     padding: 0;
