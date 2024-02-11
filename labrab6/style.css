@@ -1,4 +1,14 @@
 /*general*/
+:root {
+    --main: #333;
+    --soft: #666;
+    --footer-background-desktop: #ddd;
+    --footer-background-mobile: #d1d1d1;
+    --border: #ddd;
+    --button-background: #fff;
+    --button-color: #000;
+    color-scheme: light;
+}
 
 * {
     box-sizing: border-box;
@@ -9,16 +19,16 @@
 body {
     font-family: Arial, sans-serif;
     font-size: 16px;
-    color: #333;
+    color: var(--main);
 }
 
 a {
     text-decoration: none;
-    color: #000;
+    color: var(--button-color);
 }
 
 a:hover {
-    color: #666;
+    color: var(--soft);
 }
 
 img {
@@ -43,8 +53,7 @@ img {
 /*header styles*/
 
 .header {
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--border);
     padding: 20px 0;
     text-align: center;
     display: flex;
@@ -85,7 +94,11 @@ img {
 }
 
 .header a {
-    color: #333;
+    color: var(--main);
+}
+
+#themeToggle {
+    padding: 2px 8px;
 }
 
 /*main styles*/
@@ -113,13 +126,13 @@ img {
 
 .main a {
     font-size: 18px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border);
     padding: 5px 10px;
-    background-color: #fff;
+    background-color: var(--button-background);
 }
 
 .main a:hover {
-    background-color: #ddd;
+    background-color: var(--border);
 }
 
 .main-section {
@@ -195,13 +208,13 @@ section.contact {
 }
 
 .contact > h2 {
-    color: #333; /* dark text */
+    color: var(--main); /* dark text */
     font-size: clamp(1.8rem, 8vw, 3.8rem);
 }
 
 .contact > h4 {
     font-size: clamp(1.8rem, 10vw, 4.8rem);
-    color: #666; /* lighter text */
+    color: var(--soft); /* lighter text */
 }
 
 /* Icons (optional) */
@@ -221,7 +234,7 @@ section.contact {
 /*footer styles*/
 
 .footer {
-    background-color: #ddd;
+    background-color: var(--footer-background-desktop);
     padding: 20px 0;
     text-align: center;
 }
@@ -243,14 +256,14 @@ section.contact {
 }
 
 .footer a {
-    color: #333;
+    color: var(--main);
 }
 
 .footer-mobile {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #b1b1b1;
+    background-color: var(--footer-background-mobile);
     font-size: 24px;
 }
 
@@ -258,7 +271,7 @@ section.contact {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #b1b1b1;
+    background-color: var(--footer-background-mobile);
     font-size: 28px;
 }
 
@@ -270,4 +283,15 @@ section.contact {
 
 .footer-mobile ul li {
     margin: 0 10px;
+}
+
+.dark {
+    --main: #ccc;
+    --soft: #777;
+    --footer-background-desktop: #333;
+    --footer-background-mobile: #444;
+    --border: #444;
+    --button-background: #000;
+    --button-color: #fff;
+    color-scheme: dark;
 }

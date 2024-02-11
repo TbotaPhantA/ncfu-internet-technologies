@@ -49,3 +49,34 @@ window.addEventListener("resize", () => {
         footer.classList.remove("footer-mobile");
     }
 });
+
+let root = document.querySelector(":root");
+let button = document.querySelector("#themeToggle");
+
+const darkTheme = "Темная тема";
+const lightTheme = "Светлая тема"
+const themeKey = "theme";
+
+if (!localStorage.getItem(themeKey)) {
+    localStorage.setItem(themeKey, lightTheme);
+}
+
+refineTheme()
+
+button.addEventListener('click', () => {
+    event.preventDefault();
+    const newTheme = localStorage.theme === lightTheme ? darkTheme : lightTheme;
+    localStorage.setItem(themeKey, newTheme);
+    refineTheme()
+    button.textContent = button.textContent === darkTheme
+        ? lightTheme
+        : darkTheme;
+})
+
+function refineTheme() {
+    if (localStorage.getItem(themeKey) === darkTheme) {
+        root.classList.add('dark');
+    } else {
+        root.classList.remove('dark');
+    }
+}
