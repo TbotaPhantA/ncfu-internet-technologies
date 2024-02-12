@@ -1,0 +1,16 @@
+.main-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: clamp(250px, 40vw, 1000px);
+    display: flex;
+    flex-direction: column;
+}
+
+.alert-danger {
+    display: none;
+}
